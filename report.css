@@ -15,26 +15,28 @@
 .fm-letter .fm-letter-paragraph{font:400 13.25pt/15pt Crimson,serif;margin:0 0 9pt}
 .fm-letter .fm-letter-paragraph:last-child{margin-bottom:0}
 .fm-letter .fm-blurb{font:400 italic 19.25pt/21pt Crimson,serif;margin:0}
+.fm-letter .fm-inside-cover{position:absolute;left:36pt;top:443pt;width:248.249pt;height:295pt;object-fit:cover;margin:0}
 .fm-letter .fm-inside-quotation{font:400 italic 10.75pt/12pt Crimson,serif;margin:0}
 .fm-signatures .rp-block{display:grid;grid-template-columns:209.354pt 126pt;column-gap:24pt;margin:0;white-space:normal}
 .fm-signatures .fm-signature-names{font:700 10pt/12pt Gilroy,sans-serif}
 .fm-signatures .fm-signature-roles{font:400 10pt/12pt Gilroy,sans-serif}
 .fm-signatory-portrait{position:absolute;top:635pt;width:74pt;height:75pt;object-fit:contain}
 .fm-signatory-signature{position:absolute;top:631pt;width:99pt;height:52pt;object-fit:contain;object-position:left center}
-.fm-quote-wash{position:absolute;inset:0 auto 0 0;width:792pt;background:#eeebeb;z-index:-1}
+.fm-quote-wash{position:absolute;inset:0 auto 0 0;width:612pt;background:#eeebeb;z-index:-1}
 .fm-quote-toc .fm-quote{font:400 italic 20.75pt/21pt Crimson,serif;margin:0}
 .fm-quote .rp-block{font:inherit;margin:0}
 .fm-hanging-quote{position:absolute;left:-6.75pt}
 .fm-rule{position:absolute;height:0;border-top:.333pt solid #747474}
 .fm-quote-toc .fm-attribution-name{font:700 8pt/12pt Gilroy,sans-serif;text-transform:uppercase;margin:0}
 .fm-quote-toc .fm-attribution-context{font:400 8pt/12pt Gilroy,sans-serif;margin:0}
-.fm-quote-toc .fm-toc-title{position:absolute;top:211pt;left:36pt;width:720pt;font:700 32pt/38pt Gilroy,sans-serif;margin:0;color:#e5008d;letter-spacing:-.5pt}
-.fm-quote-toc .fm-toc{position:absolute;left:36pt;top:273pt;width:720pt;height:451pt;columns:339pt 2;column-gap:42pt;column-fill:balance;display:block}
-.fm-toc-photo{position:absolute;left:828pt;top:36pt;width:360pt;height:688pt;object-fit:cover;display:block}
+.fm-quote-toc .fm-toc-title{position:absolute;top:28.8pt;left:929pt;width:259.2pt;font:700 32pt/38pt Gilroy,sans-serif;margin:0;color:#000;letter-spacing:-.5pt;white-space:nowrap}
+.fm-quote-toc .fm-toc{position:absolute;left:666pt;top:158pt;width:522pt;height:566pt;columns:240pt 2;column-gap:42pt;column-fill:auto;display:block}
+.fm-toc-photo{position:absolute;left:334.854pt;top:34.539pt;width:224.365pt;height:272.303pt;object-fit:cover;display:block}
 .fm-toc .rp-toc-row{font:700 14pt/15pt Gilroy,sans-serif;border:0;border-top:.333pt solid #777;margin:0 0 24pt;padding:7pt 0 0;display:flex;justify-content:space-between;gap:12pt;break-inside:avoid}
 .fm-toc .rp-toc-row>span:first-child{flex:1}
 .fm-toc .rp-toc-row>span:last-child{font-size:11pt;white-space:nowrap}
-.fm-toc .fm-toc-group{break-inside:avoid;margin-bottom:12pt;border-top:.333pt solid #777;padding-top:7pt}
+.fm-toc .fm-toc-group{break-inside:avoid;margin-bottom:24pt;border-top:.333pt solid #777;padding-top:7pt}
+.fm-toc .fm-toc-column-two{break-before:column}
 .fm-toc .fm-toc-major{display:grid;grid-template-columns:12pt 1fr 24pt;gap:12pt;border:0;padding:0;margin:0 0 6pt}
 .fm-toc .fm-toc-index{color:#e5008d}
 .fm-toc .rp-toc-row .fm-toc-folio{color:#000}
@@ -43,8 +45,11 @@
 .fm-toc a:focus-visible{outline:1pt solid #e5008d;outline-offset:3pt}
 .fm-toc a:hover .fm-toc-label,.fm-toc a:hover>span:first-child{text-decoration:underline}
 .fm-mission{background:#020406;color:white}
-.fm-mission .fm-mission-photo{position:absolute;top:126pt;height:282pt;object-fit:cover;margin:0}
-.fm-mission .fm-mission-photo-1{left:612pt;width:612pt}
+.fm-mission-scene{position:absolute;inset:0;overflow:hidden;margin:0;z-index:-1}
+.fm-mission .fm-mission-photo{position:absolute;top:-1.182861pt;height:794.567627pt;object-fit:fill;margin:0;max-width:none}
+.fm-mission .fm-mission-photo-left{left:70.661377pt;width:542.728699pt}
+.fm-mission .fm-mission-photo-right{left:610.999207pt;width:614.056458pt}
+.fm-mission .fm-mission-archive{position:absolute;left:126pt;top:704pt;width:270pt;font:400 10.75pt/12pt Crimson,serif;color:white;margin:0}
 .fm-mission-rail{position:absolute;left:0;top:0;width:82pt;height:792pt;background:linear-gradient(180deg,#fa2929,#e5008d)}
 .fm-section-index{position:absolute;left:0;top:27.02pt;width:82pt;text-align:center;font:400 34pt/41pt Gilroy,sans-serif;color:white}
 .fm-mission .fm-mission-title{position:absolute;top:19.725pt;right:36pt;font:700 69pt/83pt Gilroy,sans-serif;letter-spacing:-1pt;margin:0;background:linear-gradient(90deg,#e5008d,#fa2929);background-clip:text;-webkit-background-clip:text;color:transparent;white-space:nowrap}
@@ -128,8 +133,71 @@
 .pp-maseko .folio .left-number,.pp-maseko .folio .left-name,.pp-interactive .folio .left-number,.pp-interactive .folio .left-name{color:white}
 @media print{.pp-page{break-inside:avoid;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
 
-/* 2025 pp52–59 media grammar: compact serif article titles; genuine logo ribbons. */
-.mp-opeds .rp-title{width:300pt}.mp-op-intro .rp-block{font:400 14pt/17pt Crimson,Georgia,serif}.mp-op-card{width:100%;height:100%;display:grid;grid-template-columns:240pt 282pt;background:#eeebeb}.mp-article-photo{display:block;width:240pt;height:178pt;object-fit:cover;object-position:50% 50%;margin:0}.mp-op-copy{height:178pt}.mp-logo-strip{height:30pt;width:282pt;display:flex;align-items:center;padding:5pt 22pt;box-sizing:border-box}.mp-logo-strip.black{background:#000}.mp-logo-strip.navy{background:#15334b}.mp-logo-strip.white{background:#fff;border-bottom:.5pt solid #dedada}.mp-logo{display:block;object-fit:contain;object-position:left center;max-width:238pt;width:auto;height:20pt}.mp-logo[src$="/wsj.png"]{filter:brightness(0) invert(1)}.mp-op-body{padding:12pt 22pt}.mp-op-body .mp-article-title{font:700 16pt/17pt Crimson,Georgia,serif;margin:0 0 10pt}.mp-meta{display:flex;flex-wrap:wrap;gap:3pt 7pt}.mp-meta .mp-byline{font:400 7.5pt/10pt Gilroy,sans-serif;letter-spacing:.35pt;text-transform:uppercase;margin:0}.mp-meta .mp-byline:first-child{order:2}.mp-meta .mp-byline:last-child{order:1}.mp-meta .mp-byline:first-child:before{content:'· ';white-space:pre}.mp-coverage-pending{border-top:.6pt solid #e5dfdf;padding:20pt 0;box-sizing:border-box}.mp-coverage-pending .mp-top-heading{font:700 27pt/29pt Gilroy,sans-serif;width:250pt;color:#c52936}.mp-social .rp-title{width:270pt}.mp-social-intro .rp-block{font:400 15pt/18pt Crimson,Georgia,serif}.mp-social-card{border:.6pt solid #bababa;border-radius:8pt;padding:15pt;box-sizing:border-box;background:#fff}.mp-social-card-head{display:flex;align-items:center;gap:10pt;margin-bottom:13pt}.mp-social-avatar{width:27pt;height:27pt;object-fit:contain;background:#fff}.mp-social-card .mp-social-month{font:700 13pt/15pt Gilroy,sans-serif;margin:0}.mp-social-card .mp-social-body{font:400 14pt/18pt Gilroy,sans-serif;margin:0}.mp-social-metric{display:block;font:700 23pt/27pt Gilroy,sans-serif;margin:10pt 0;color:#111}.mp-chapter-copy .rp-block{color:#fff;font:400 20pt/23pt Crimson,Georgia,serif}.mp-chapter .rp-chapter-shade{background:linear-gradient(180deg,#000b 0%,#0005 30%,transparent 58%)}
+/* 2025 pp52–59: full-bleed opener, publisher ribbons, rounded source media
+   with report-period metrics. Local verified assets only; no network embeds. */
+.mp-chapter .rp-chapter-photo[data-media-full-bleed="true"]{object-fit:cover!important}
+.mp-chapter-copy .rp-block{color:#fff;font:400 20pt/23pt Crimson,Georgia,serif}
+.mp-chapter .rp-chapter-shade{background:linear-gradient(180deg,#000b 0%,#0005 30%,transparent 58%)}
+.mp-hero-source{position:absolute;left:930pt;top:698pt;width:248pt;color:#fff;background:#000b;padding:6pt 8pt;font:400 8pt/10pt Gilroy,sans-serif;box-sizing:border-box}
+.mp-opeds .rp-title{width:500pt}.mp-coverage .rp-title{font-size:30pt}
+.mp-coverage-kicker{position:absolute;left:36pt;top:89pt;font:400 8pt/10pt Gilroy,sans-serif;letter-spacing:.6pt;text-transform:uppercase;color:#565252}
+.mp-op-intro .rp-block{font:400 14pt/17pt Crimson,Georgia,serif}
+.mp-op-card{width:100%;height:100%;display:grid;grid-template-columns:240pt 282pt;background:#eeebeb}
+.mp-article-photo{display:block;width:240pt;height:178pt;object-fit:cover;object-position:50% 50%;margin:0}
+.mp-op-copy{height:178pt}.mp-logo-strip{height:30pt;width:282pt;display:flex;align-items:center;padding:5pt 22pt;box-sizing:border-box}
+/* Every publisher has an opaque, distinct ribbon; no white or transparent strip. */
+.mp-logo-strip.wsj{background:#191b36}.mp-logo-strip.diplomat{background:#e4a24c}.mp-logo-strip.washington{background:#79394c}.mp-logo-strip.moscow{background:#216471}.mp-logo-strip.kyiv{background:#2459af}.mp-logo-strip.realclear{background:#93bfb4}.mp-logo-strip.freepress{background:#814925}.mp-logo-strip.democracy{background:#583875}
+.mp-logo{display:block;object-fit:contain;object-position:left center;max-width:238pt;width:auto;height:20pt}
+.mp-logo-strip.wsj .mp-logo,.mp-logo-strip.kyiv .mp-logo{filter:brightness(0) invert(1)}
+.mp-logo-strip.diplomat .mp-logo,.mp-logo-strip.realclear .mp-logo{mix-blend-mode:multiply}
+.mp-logo-strip.washington .mp-logo,.mp-logo-strip.freepress .mp-logo{mix-blend-mode:screen}
+.mp-op-body{padding:12pt 22pt}.mp-op-body .mp-article-title{font:700 16pt/17pt Crimson,Georgia,serif;margin:0 0 10pt}
+.mp-meta{display:flex;flex-wrap:wrap;gap:3pt 7pt}.mp-meta .mp-byline{font:400 7.5pt/10pt Gilroy,sans-serif;letter-spacing:.35pt;text-transform:uppercase;margin:0}
+.mp-meta .mp-byline:first-child{order:2}.mp-meta .mp-byline:last-child{order:1}.mp-meta .mp-byline:first-child:before{content:'· ';white-space:pre}
+.mp-social .rp-title{width:270pt}.mp-social-intro .rp-block{font:400 15pt/18pt Crimson,Georgia,serif}
+.mp-social-card{display:grid;grid-template-columns:236pt 1fr;gap:17pt;box-sizing:border-box;align-items:start}
+.mp-local-embed{display:block;box-sizing:border-box;border:.6pt solid #c5c5c5;border-radius:9pt;padding:8pt;background:#fff;color:#111!important;font-family:Gilroy,sans-serif;overflow:hidden;text-decoration:none}
+.mp-local-embed:focus-visible{outline:2pt solid #ca2589;outline-offset:3pt}
+.mp-embed-account{display:flex;gap:5pt;align-items:center;min-height:17pt;margin-bottom:5pt}
+.mp-source-avatar{width:16pt;height:16pt;object-fit:contain}.mp-source-account{font:700 9pt/11pt Gilroy,sans-serif;flex:1}.mp-platform{font:700 7pt/9pt Gilroy,sans-serif;color:#5d5d5d}
+.mp-embed-visual{position:relative;line-height:0;border-radius:5pt;overflow:hidden;background:#f1eeee}
+.mp-source-media{display:block;width:100%;height:auto;object-fit:contain}
+.mp-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);border-radius:50%;background:#000b;color:#fff;font:700 17pt/34pt Gilroy,sans-serif;text-align:center;width:34pt;height:34pt;padding-left:2pt;box-sizing:border-box}
+.mp-media-title{font:700 8pt/10pt Gilroy,sans-serif;margin-top:5pt}
+.mp-verified-quote{font:400 9pt/11pt Gilroy,sans-serif;margin:0 0 5pt;padding:0;border:0;letter-spacing:0}
+.mp-embed-doja{padding:7pt}.mp-embed-doja .mp-embed-account{min-height:16pt;margin-bottom:3pt}.mp-embed-doja .mp-verified-quote{font-size:8.5pt;line-height:10pt;margin-bottom:4pt}.mp-embed-doja .mp-source-media{height:98pt;object-fit:contain}
+.mp-embed-grace .mp-source-media{height:120pt;object-fit:contain}
+.mp-portrait-row{display:grid;grid-template-columns:76pt 1fr;gap:9pt}.mp-portrait-row .mp-source-media{height:135pt}.mp-post-detail{padding-top:7pt}.mp-post-date{display:block;color:#626262;font:400 7pt/10pt Gilroy,sans-serif;margin-top:7pt}
+.mp-social-report{padding-top:3pt}.mp-social-card .mp-social-month{font:700 12pt/15pt Gilroy,sans-serif;margin:0 0 6pt;color:#333}
+.mp-social-card .mp-social-body{font:400 12.5pt/15pt Gilroy,sans-serif;margin:0}
+.mp-social-metric{display:block;font:700 22pt/26pt Gilroy,sans-serif;margin:5pt 0 4pt;color:#111}
+.mp-source-note{font:400 6.8pt/9pt Gilroy,sans-serif;color:#686464;margin-top:8pt}.mp-source-note span{display:block}
+.mp-story-power{grid-template-columns:218pt 1fr;gap:18pt;border-bottom:.6pt solid #d9d5d5;padding-bottom:15pt}
+.mp-story-power .mp-social-body{font-size:13pt;line-height:16pt}.mp-story-power .mp-social-metric{font-size:24pt;line-height:28pt}
+.mp-story-power .mp-source-media{height:195pt}.mp-story-power .mp-local-embed{padding:8pt}.mp-story-power .mp-media-title{font-size:9pt;line-height:11pt}
+.mp-story-oslo{display:block}.mp-story-oslo .mp-local-embed{padding:8pt}.mp-story-oslo .mp-embed-account{margin-bottom:6pt}
+.mp-story-oslo .mp-source-media{height:279pt;object-fit:contain;background:#111}.mp-story-oslo .mp-media-title{font-size:10pt;line-height:12pt}
+.mp-story-oslo .mp-social-report{display:grid;grid-template-columns:57pt 1fr;gap:4pt 13pt;padding-top:9pt}.mp-story-oslo .mp-social-month{grid-column:1;grid-row:1;padding-top:1pt}
+.mp-story-oslo .mp-social-body{grid-column:2;grid-row:1;font-size:13pt;line-height:16pt}.mp-story-oslo .mp-social-metric{display:inline;font-size:17pt;line-height:19pt;margin:0}
+.mp-story-oslo .mp-source-note{grid-column:2;margin-top:0}
+.mp-capture-ledger{position:absolute;left:36pt;top:735pt;width:1152pt;font:400 7pt/9pt Gilroy,sans-serif;color:#666}
+/* Deliberately planned fifth media spread: seven newly supplied coverage stories. */
+.mp-top-coverage .rp-title{width:540pt}
+.mp-coverage-frame .mp-article-photo{background:#e3e0e0;object-fit:contain}
+.mp-coverage-frame .mp-op-copy{height:100%}
+.mp-coverage-meta .mp-byline{font:400 8pt/11pt Gilroy,sans-serif;letter-spacing:.3pt;text-transform:uppercase;margin:0 0 3pt}
+.mp-coverage-compact .mp-op-card{grid-template-columns:190pt 332pt}
+.mp-coverage-compact .mp-article-photo{width:190pt;height:129.5pt}
+.mp-coverage-compact .mp-logo-strip{width:332pt;height:27pt;padding:4pt 18pt}
+.mp-coverage-compact .mp-op-body{padding:9pt 18pt}
+.mp-coverage-compact .mp-article-title{font-size:15pt;line-height:16pt;margin-bottom:6pt}
+.mp-coverage-compact .mp-logo{height:19pt;max-width:285pt}
+.mp-logo-strip.reuters{background:#e9a052}.mp-logo-strip.reuters .mp-logo{height:22pt;filter:brightness(0)}
+.mp-logo-strip.bbc{background:#b72940}.mp-logo-strip.bbc .mp-logo{height:17pt}
+.mp-logo-strip.vice{background:#352e45}.mp-logo-strip.guardian{background:#123c62}
+.mp-logo-strip.realclearpolitics{background:#78b6c3}.mp-logo-strip.realclearpolitics .mp-logo{mix-blend-mode:multiply}
+.mp-logo-strip.theworld{background:#8e4532}.mp-logo-strip.theworld .mp-logo{filter:brightness(0) invert(1)}
+.mp-coverage-source{font:400 7pt/9pt Gilroy,sans-serif;color:#666!important;display:block;margin-top:5pt}
 
 /* Geometry and type follow 2025 references 9–11, 23, 33 and 42.
    Scoped fixed frames intentionally throw rather than silently spilling. */
@@ -141,13 +209,23 @@
 .rv-program .rv-card .rp-block{font:400 13.25pt/15pt Crimson,Georgia,serif;margin-bottom:9pt}
 .rv-program .rv-card .rp-block:first-child{font:700 14pt/15.5pt Gilroy,sans-serif;margin-bottom:8pt}
 .rv-program .rv-intro.rv-card .rp-block{font:400 16.5pt/18.5pt Crimson,Georgia,serif}
-.rv-impact .rv-intro .rp-block{font:400 13.25pt/15pt Crimson,Georgia,serif}
+.rv-impact .rv-intro .rp-block{font:400 13.25pt/15pt Crimson,Georgia,serif;margin-bottom:12pt}
+.rv-impact-open .rp-label,.rv-impact-open .rp-title{left:666pt}
+.rv-impact-open .rp-title{width:204pt;font:700 32pt/32pt Gilroy,sans-serif}
 .rv-impact .rv-case-title .rp-block{font:700 20.5pt/22pt Gilroy,sans-serif}
-.rv-impact .rv-case .rp-block{font:400 10.75pt/12.25pt Gilroy,sans-serif;margin-bottom:5pt}
-.rv-impact .rv-case .rp-block:first-child{font:700 14pt/15pt Gilroy,sans-serif;padding-top:6pt;border-top:1.5pt solid #7baccb;margin-bottom:5pt}
-.rv-impact .rv-case[data-outcome=release] .rp-block:first-child{border-color:#79a78b}
-.rv-impact .rv-case[data-outcome=opinion] .rp-block:first-child{border-color:#d79f55}
-.rv-impact-follow .rp-title{font-size:24pt;line-height:26pt}
+.rv-impact .rv-case .rp-block{font:400 10.75pt/12.25pt Crimson,Georgia,serif;margin:0}
+.rv-impact .rv-case .rp-block:first-child{font:700 12.5pt/14pt Gilroy,sans-serif;padding:0 0 3pt;border:0;margin:0 0 3pt;color:#275d81}
+.rv-impact .rv-case[data-outcome=release] .rp-block:first-child{color:#39735b}
+.rv-impact .rv-case[data-outcome=opinion] .rp-block:first-child{color:#ac650e}
+.rv-impact .rv-lit-update .rp-block:first-child{font-size:11.5pt;line-height:13pt;padding-bottom:1pt;margin-bottom:2pt}
+.rv-impact .rv-lit-caption{font:400 7.75pt/9pt Gilroy,sans-serif;color:#555}
+.rv-impact .rv-lit-label{font:400 8pt/10pt Gilroy,sans-serif;color:#333;z-index:2}
+.rv-impact .rv-lit-team-caption{font:400 10.75pt/12pt Crimson,Georgia,serif}
+.rv-impact .rv-lit-team-caption span{font-size:8pt;color:#666}
+.rv-impact-follow .rp-title{width:540pt;font:700 24pt/26pt Gilroy,sans-serif}
+.rv-impact-follow .rv-lit-follow-heading{font:700 13pt/16pt Gilroy,sans-serif}
+.rv-impact-follow .rv-case .rp-block:first-child{max-width:100%;font-size:14pt;line-height:15.5pt;padding-bottom:0;margin-bottom:3pt}
+.rv-impact-follow .rv-lit-outlook{border-top:.7pt solid #b9b9b9;padding-top:7pt;box-sizing:border-box}
 .rv-celebrities .rv-card:not(.rv-intro) .rp-block{font-size:12.5pt;line-height:14.5pt}
 .rv-celebrities .rv-card:not(.rv-intro) .rp-block:first-child{font:700 16.5pt/18pt Gilroy,sans-serif}
 .rv-ccp .rv-card:not(.rv-intro) .rp-block{font:400 11.5pt/13.25pt Gilroy,sans-serif}
