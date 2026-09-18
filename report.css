@@ -29,7 +29,7 @@
 .fm-rule{position:absolute;height:0;border-top:.333pt solid #747474}
 .fm-quote-toc .fm-attribution-name{font:700 8pt/12pt Gilroy,sans-serif;text-transform:uppercase;margin:0}
 .fm-quote-toc .fm-attribution-context{font:400 8pt/12pt Gilroy,sans-serif;margin:0}
-.fm-quote-toc .fm-toc-title{position:absolute;top:28.8pt;left:929pt;width:259.2pt;font:700 32pt/38pt Gilroy,sans-serif;margin:0;color:#000;letter-spacing:-.5pt;white-space:nowrap}
+.fm-quote-toc .fm-toc-title{position:absolute;top:28.8pt;left:929pt;width:259.2pt;font:700 32pt/38pt Gilroy,sans-serif;margin:0;color:#e0038b;letter-spacing:-.5pt;white-space:nowrap}
 .fm-quote-toc .fm-toc{position:absolute;left:666pt;top:158pt;width:522pt;height:566pt;columns:240pt 2;column-gap:42pt;column-fill:auto;display:block}
 .fm-toc-photo{position:absolute;left:334.854pt;top:34.539pt;width:224.365pt;height:272.303pt;object-fit:cover;display:block}
 .fm-toc .rp-toc-row{font:700 14pt/15pt Gilroy,sans-serif;border:0;border-top:.333pt solid #777;margin:0 0 24pt;padding:7pt 0 0;display:flex;justify-content:space-between;gap:12pt;break-inside:avoid}
